@@ -1,0 +1,68 @@
+.main-clock-container {
+    margin-top: auto;
+}
+
+.fade-clock {
+  animation: fade-clock 1s linear 1;
+}
+
+.fade-end-clock {
+  animation: none;
+}
+
+@keyframes fade-clock {
+  0% {
+    transform: translate(0px, 50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0%);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-clock-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+}
+  
+  .main-clock {
+    margin-top: auto;
+  }
+  
+  .greeting {
+    display: flex;
+    align-items: flex-end;
+    &__icon {
+      display: inline-flex;
+      margin-right: 1.6rem;
+      margin-bottom: .2rem;
+    }
+  }
+  
+  .current-time {
+    display: flex;
+    align-items: flex-end;
+    margin: 1.6rem 0;
+    @media (min-width: 768px) {
+      margin: 0;
+    }
+    @media (min-width: 1024px) {
+      margin: 1.6rem 0;
+    }
+    
+    &__timezone {
+      margin-left: 1.6rem;
+      margin-bottom: .5rem;
+      @media (min-width: 768px) {
+        margin-bottom: 2.4rem;
+      }
+      @media (min-width: 1024px) {
+        margin-bottom: 2.7rem;
+      }
+    }
+  }
+

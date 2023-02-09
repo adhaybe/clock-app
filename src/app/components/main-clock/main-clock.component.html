@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<div class="main-clock" [ngClass]="{'fade-clock' : !isLoading, 'fade-end-clock': hasEnded}">
+    <div class="greeting">
+      <span class="greeting__icon">
+        <img [src]="greetingIcon" alt="greeting icon"/>
+      </span>
+      <p class="t-greeting">{{ greetingText }}<span class="hide-on-mobile">, it’s currently</span></p>
+    </div>
+    <div class="current-time" *ngIf="!isLoading">
+      <h1 class="t-time">{{ currentTime }}</h1>
+      <p class="t-timezone current-time__timezone">{{ timeZone.abbreviation }}</p>
+    </div>
+    <app-location></app-location>
+  </div>
+  

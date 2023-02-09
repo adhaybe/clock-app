@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<div class="app" [ngClass]="timeOfDay">
+    <app-overlay></app-overlay>
+    <div class="container__main" [ngClass]="{'active': isActive}">
+      <div class="inner__container">
+        <app-quotes></app-quotes>
+        <div class="main-clock-container">
+          <app-main-clock></app-main-clock>
+          <app-more-button></app-more-button>
+        </div>
+      </div>
+    </div>
+    <div class="container__more" [ngClass]="{'active': isActive}">
+      <app-more-detail></app-more-detail>
+    </div>
+  </div>
+  

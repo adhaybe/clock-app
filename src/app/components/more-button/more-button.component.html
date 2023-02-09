@@ -1,0 +1,5 @@
+<!DOCTYPE html>
+<button class="btn btn--more" [ngClass]="{'active': isActive, 'fade-button' : !isLoading, 'fade-button-end': hasEnded}" (click)="showMoreDetails()">
+    <span class="t-btn-more">{{ buttonText }}</span>
+    <img src="../../../assets/desktop/icon-arrow-up-1.svg" alt="icon arrow"/>
+</button>

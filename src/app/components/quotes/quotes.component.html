@@ -1,0 +1,11 @@
+<div class="quotes-container" [ngClass]="{'hide': isActive}">
+  <div class="quotes">
+    <p class="quotes__body t-quotes">“{{ quote.content }}”</p>
+    <p class="quotes__author t-quotes-author">{{ quote.author }}</p>
+  </div>
+  <button class="btn btn--refresh">
+    <span class="sr-only">Refresh button</span>
+    <img id="refresh-icon" [ngClass]="{'spinning': spinning}" src="../../../assets/desktop/icon-refresh.svg" alt="refresh icon" (click)="refresh()"/>
+  </button>
+</div>
+  
